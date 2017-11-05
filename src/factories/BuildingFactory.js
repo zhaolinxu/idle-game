@@ -9,8 +9,8 @@ export const baseIncome = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
 
 // display name of buildings
 export const buildingNames = [
-  ['Bloodhound','Spearman','Archer','Tracker','Woodsman','Pathfinder','Scout','Trapper','Wellspring','River'],
-  ['Shepherd','Sheepdog','Fence-Maker','Wolf-hunter','Farmhand','Shearer','Carver','Smoker','Roaster','Breeder'],
+  ['寻血猎犬','枪兵','弓箭手','追踪器','樵夫','开拓者','侦察兵','猎人','涌泉','河流'],
+  ['牧羊人','Sheepdog','Fence-Maker','Wolf-hunter','Farmhand','Shearer','Carver','Smoker','Roaster','Breeder'],
   ['Digger','River-Guide','Bridge-Builder','Baker','Heater','Shaper','Trailblazer','Mixer','Sculptor','Mason'],
   ['Coal-Miner','Cart-Mover','Tracklayer','Foreman','Prospector','Blacksmith','Ironmonger','Smithy','Smelter','Ironworks'],
   ['Recruiter','Weaponsmith','Armorsmith','Fletcher','Sergeant','Propagandist','Major','Logician','Major-Major','General'],

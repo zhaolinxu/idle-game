@@ -23,7 +23,7 @@ export default class PropertyView extends React.Component {
         const currencyName = <Color>{titleify(property.currencyName)}</Color>
         const researchName = <Color>{titleify(property.researchName)}</Color>
         const researchLink = (
-          <a href={`#/research/${property.id}`}>{name} Improvements</a>
+          <a href={`#/research/${property.id}`}>{name} 升级</a>
         )
 
         let last, lastName, next
@@ -36,30 +36,30 @@ export default class PropertyView extends React.Component {
         return (
           <div className={property.name} key={i}>
 
-            <h3>{name}s</h3>
+            <h3>{name}</h3>
 
             {i > 0 && next > 0 &&
               <p>
-                {lastName}s til next {property.name}: {next}
+                {lastName} 下一级 {property.name}: {next}
               </p>
             }
 
             {instances &&
               <div>
                 <p>
-                  {money} {currencyName} stored and producing {income} per tick
+                  拥有{money} {currencyName} ，每秒生产 {income} 。
                 </p>
 
                 <p>
-                  {research} {researchName} is available for use on {researchLink}.
+                  {research} {researchName} 现可提供使用 {researchLink}.
                 </p>
 
                 <p>
-                  {property.completed} {name}s have been completed total.
+                  总共有{property.completed} {name}已经完成。
                 </p>
 
                 <h4>
-                  Active {name}s <span className="badge">{instances.length}</span>
+                  活动 {name} <span className="badge">{instances.length}</span>
                 </h4>
 
                 <ul className="list-group">

@@ -33,7 +33,7 @@ const goals = [
       return (Math.ceil((building+1) / 2)) * baseIncome[building]
     },
     getDescription(amount, building, currency) {
-      return `get ${amount} ${currency}/sec with ${building}`
+      return `${building} 生产 ${amount} ${currency}/秒 `
     },
   },
 ]

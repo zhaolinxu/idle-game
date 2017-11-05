@@ -22,7 +22,7 @@ export default React.createClass({
     const autoCompleteProgress = 100 - instance.autoCompleteProgress()
 
     const researchLink = (
-      <a href={`#/research/${instance.type}`}>{name} Improvements</a>
+      <a href={`#/research/${instance.type}`}>{name}升级</a>
     )
 
     const currencyDiv = <Color>{titleify(currencyName)}</Color>
@@ -39,7 +39,7 @@ export default React.createClass({
           </ProgressBar>
 
           <h6>
-            Click bar to complete level or wait for auto-complete
+           点击栏以完成级别或等待自动完成
           </h6>
 
         </div>
@@ -61,31 +61,31 @@ export default React.createClass({
           {progressBar}
 
           <h5>
-            Goal: {goal.description}
+            目标: {goal.description}
           </h5>
 
         </div>
 
         <p>
-          Contains {f(money, '0,0')} {currencyDiv} producing {income}  {currencyDiv} / sec
+          拥有 {f(money, '0,0')} {currencyDiv} ，生产 {income}  {currencyDiv} / 秒。
         </p>
 
         <p>
-          {researchMoney} {researchDiv} available for {researchLink}.
+          {researchMoney} {researchDiv} 可以用来 {researchLink}.
         </p>
 
         <a onClick={() => this.props.toggleAutoBuy(id)}>
-          Toggle Autobuy: {instance.disableAutoBuy ? 'off' : 'on'}
+          切换自动购买：{instance.disableAutoBuy ? '关闭' : '打开'}
         </a>
 
         <table className="table">
 
           <thead><tr>
-            <th>Building</th>
+            <th>建造</th>
             <th>#</th>
-            <th>Cost</th>
-            <th>Income</th>
-            <th>/ Tick</th>
+            <th>消耗</th>
+            <th>收入</th>
+            <th>/ 秒</th>
           </tr></thead>
 
           <tbody>

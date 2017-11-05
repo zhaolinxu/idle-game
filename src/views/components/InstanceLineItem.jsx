@@ -28,7 +28,7 @@ export default ({ instance, clickInstance, clickComplete }) => {
         </div>
 
         <div className="text-center col-xs-6" onClick={onClick}>
-          <a>{isComplete ? 'Click to complete' : goalDescription}</a>
+          <a>{isComplete ? '点击完成' : goalDescription}</a>
         </div>
 
         <div className="text-right col-xs-3">

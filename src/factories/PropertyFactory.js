@@ -5,10 +5,10 @@ import { titleify, replaceString } from 'utils/helpers'
 import { buildingNames } from 'factories/BuildingFactory'
 import ResearchFactory from 'factories/ResearchFactory'
 
-export const name = ['hamlet', 'village', 'town', 'city', 'castle', 'kingdom', 'empire', 'planet', 'galaxy', 'universe']
+export const name = ['小村', '乡村', '小镇', '城市', '城堡', '王国', '帝国', '星球', '星系', '宇宙']
 export const color = ['#D48A5B', '#F8ECC9', '#C85705', '#9A93A1', '#CBA65C', '#F8CA00', '#07557D', '#24D268', '#E566C2', '#333333']
-export const currencyNames = ['deer', 'lamb', 'brick', 'iron', 'soldier', 'gold', 'machine', 'starship', 'matter', 'existence']
-export const researchNames = ['venison', 'wool', 'marble', 'steel', 'captain', 'platinum', 'circuit', 'anti-matter', 'AI', 'transcendence']
+export const currencyNames = ['鹿', '羊羔', '砖头', '铁', '士兵', '黄金', '机器', '星舰', '事项', '存在']
+export const researchNames = ['鹿肉', '羊毛', '大理石', '钢', '队长', '白金', '电路', '反物质', '人工智能', '超越']
 
 export default () => {
 

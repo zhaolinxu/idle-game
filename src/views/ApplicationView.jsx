@@ -39,8 +39,8 @@ const ApplicationView = React.createClass({
       <div className="container">
 
         <ol className="breadcrumb">
-          <li><strong>Idle Game</strong></li>
-          <li><a href="#/property">Properties</a></li>
+          <li><strong>增量游戏</strong></li>
+          <li><a href="#/property">属性</a></li>
           {instance &&
             <li className="active">
               <a href={`#/instance/${params.instance}`}>
@@ -50,7 +50,7 @@ const ApplicationView = React.createClass({
           }
           {property &&
             <li className="active"><a href={`#/research/${params.property}`}>
-              {titleify(property.name)} Improvements
+              {titleify(property.name)}升级
             </a></li>
           }
         </ol>
@@ -62,19 +62,19 @@ const ApplicationView = React.createClass({
             <div className="row text-center" style={{ margin: '0 -10px' }}>
 
               <a className="col-xs-2" onClick={this.props.clearSave}>
-                Clear Save
+                重玩
               </a>
 
               <Link className="col-xs-4" to="#/property">
-                View Properties
+               查看属性
               </Link>
 
               <a className="col-xs-4" onClick={() => this.props.changeUpgradePoints(0.05)}>
-                Get Upgrades ({format(this.props.ui.upgrades,'0.00')}U)
+               升级 ({format(this.props.ui.upgrades,'0.00')}U)
               </a>
 
               <a className="col-xs-2" onClick={this.props.toggleMuliplier}>
-                x{this.props.ui.multi} click
+                x{this.props.ui.multi} 倍点击
               </a>
 
             </div>
